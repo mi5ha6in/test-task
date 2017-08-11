@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "autoprefixer": "6.7.x",
+    "browser-sync": "2.18.12",
+    "gulp": "3.9.1",
+    "gulp-plumber": "1.1.0",
+    "gulp-postcss": "6.4.0",
+    "gulp-sass": "3.1.0"
+  },
+  "scripts": {
+    "test": "editorconfig-cli",
+    "build": "gulp style",
+    "start": "gulp serve"
+  },
+  "engines": {
+    "node": "6.10"
+  }
+}
