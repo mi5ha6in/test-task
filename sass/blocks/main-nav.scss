@@ -1,0 +1,28 @@
+.main-nav {
+  display: flex;
+
+  min-width: 506px;
+
+  justify-content: space-between;
+  align-items: baseline;
+  &__list {
+    @include reset-list;
+
+    display: flex;
+
+    flex-wrap: wrap;
+  }
+  &__item {
+    font-size: 24px;
+
+    padding-right: 37px;
+
+    color: #0064aa;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+
+      color: #000;
+    }
+  }
+}

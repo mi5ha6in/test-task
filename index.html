@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="UTF-8">
     <title>Microsoft Developer Tour </title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Pixel Glass -->
+    <style>
+    HTML {
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    /* Desktop */
+    background-image: url("img/maket.png");
+    }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
   </head>
-
   <body>
+    <header class="page-header">
+      <div class="page-header__inner">
+        <h1 class="page-header__title">Microsoft Developer Tour
+        <span class="page-header__subtitle">Технологическая экспедиция</span>
+        </h1>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">Об экспедиции</li>
+            <li class="main-nav__item">Новости</li>
+          </ul>
+          <div class="social-link">
+            <a class="social-link__item social-link__item--facebook" href="#"></a>
+            <a class="social-link__item social-link__item--twitter" href="#"></a>
+            <a class="social-link__item social-link__item--vk" href="#"></a>
+          </div>
+        </nav>
+      </div>
+    </header>
   </body>
-
 </html>

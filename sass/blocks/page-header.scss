@@ -1,0 +1,28 @@
+.page-header {
+  color: #000;
+  &__inner {
+    @include wrapper;
+
+    display: flex;
+
+    padding-top: 48px;
+
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  &__title {
+    @include reset-spacings;
+
+    font-size: 44px;
+    font-weight: normal;
+    line-height: 46px;
+  }
+  &__subtitle {
+    font-size: 20px;
+    line-height: 26px;
+
+    display: block;
+
+    padding-top: 7px;
+  }
+}

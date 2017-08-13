@@ -1,0 +1,36 @@
+.social-link {
+  display: flex;
+
+  min-width: 152px;
+
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  &__item {
+    background-image: url('../img/social_icon/social_icon.png');
+    background-repeat: no-repeat;
+    &:hover {
+      opacity: .7;
+    }
+    &--facebook {
+      width: 22px;
+      height: 34px;
+
+      background-position: -10px -10px;
+
+      align-self: flex-start;
+    }
+    &--twitter {
+      width: 36px;
+      height: 35px;
+
+      background-position: -50px -6px;
+    }
+    &--vk {
+      width: 37px;
+      height: 30px;
+
+      background-position: -108px -10px;
+    }
+  }
+}
