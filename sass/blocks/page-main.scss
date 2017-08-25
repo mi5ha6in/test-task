@@ -1,0 +1,7 @@
+.page-main {
+  &__inner {
+    @include wrapper;
+
+    margin-top: 30px;
+  }
+}

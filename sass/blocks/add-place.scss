@@ -1,0 +1,21 @@
+.add-place {
+  font-size: 36px;
+  line-height: 40px;
+
+  box-sizing: border-box;
+  width: 327px;
+  min-height: 328px;
+  padding-top: 120px;
+  padding-right: 31px;
+  padding-left: 31px;
+
+  background: #eee url(../img/icon/guide__add-place.png) no-repeat 31px 16px;
+
+  align-self: flex-start;
+  &__title {
+    display: inline-block;
+
+    padding-bottom: 28px;
+  }
+}
+

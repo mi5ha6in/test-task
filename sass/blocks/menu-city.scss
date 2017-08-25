@@ -1,0 +1,31 @@
+.menu-city {
+  @include reset-list;
+
+  font-family: SegoeUIRegular, Helvetica, Roboto, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 40px;
+
+  position: relative;
+
+  display: flex;
+  display: none;
+
+  width: 1041px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  color: #0064aa;
+  border: 1px solid #000;
+
+  flex-wrap: wrap;
+  &__item {
+    box-sizing: border-box;
+    width: 347px;
+    margin-bottom: 10px;
+    padding-left: 50px;
+  }
+}

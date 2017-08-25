@@ -1,0 +1,22 @@
+.btn {
+  font-family: SegoeUIRegular, Helvetica, Roboto, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+
+  width: 100%;
+  padding: 15px 5px 18px;
+
+  cursor: pointer;
+  text-align: center;
+
+  color: #fff;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #4f760b;
+  border-radius: 4px;
+  background-color: #8bc02e;
+  box-shadow: inset 0 5px 0 0 #a7e639;
+  &:hover {
+    background-color: #a7e639;
+  }
+}

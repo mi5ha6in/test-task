@@ -1,0 +1,61 @@
+.list-cards {
+  @include reset-list;
+
+  font-family: SegoeUIRegular, Helvetica, Roboto, Arial, sans-serif;
+  font-size: 18px;
+
+  display: flex;
+
+  color: #fff;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__item {
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 0;
+
+    cursor: pointer;
+  }
+  &__item-inner {
+    position: relative;
+
+    background: #000;
+    &:hover > .list-cards__img {
+      opacity: 1;
+    }
+    &:hover > .list-cards__caption {
+      background-color: #8bc02e;
+    }
+  }
+  &__img {
+    display: block;
+
+    opacity: .6;
+  }
+  &__caption {
+    position: absolute;
+    bottom: 0;
+
+    box-sizing: border-box;
+    width: 100%;
+    padding: 25px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+  }
+  &__name {
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 32px;
+
+    margin: 0;
+    padding: 0;
+  }
+  &__city {
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 35px;
+  }
+}

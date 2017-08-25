@@ -1,0 +1,42 @@
+.guide {
+  font-family: SegoeUILight, Helvetica, Roboto, Arial, sans-serif;
+  &__title {
+    @include reset-spacings;
+
+    font-size: 122px;
+    font-weight: normal;
+    line-height: 165px;
+
+    padding-bottom: 40px;
+
+    color: #000;
+    &--shift-left {
+      margin-left: -6px;
+    }
+  }
+  &__select-city {
+    font-size: 36px;
+    line-height: 42px;
+
+    padding-top: 20px;
+
+    color: #000;
+    span {
+      cursor: pointer;
+
+      color: #0064aa;
+    }
+  }
+  &__content {
+    @include wrapper;
+
+    display: flex;
+
+    margin-top: 57px;
+
+    justify-content: space-between;
+  }
+  &__list-city {
+    width: 1041px;
+  }
+}
