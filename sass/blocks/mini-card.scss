@@ -1,0 +1,41 @@
+.mini-card {
+  position: relative;
+
+  background: #000;
+  &:hover > .mini-card__img {
+    opacity: 1;
+  }
+  &:hover > .mini-card__caption {
+    background-color: #8bc02e;
+  }
+  &__img {
+    display: block;
+
+    opacity: .6;
+  }
+  &__caption {
+    position: absolute;
+    bottom: 0;
+
+    box-sizing: border-box;
+    width: 100%;
+    padding: 25px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+  }
+  &__name {
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 32px;
+
+    margin: 0;
+    padding: 0;
+  }
+  &__city {
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 35px;
+  }
+}
