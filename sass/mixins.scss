@@ -1,5 +1,15 @@
+@mixin lg-wrapper {
+  width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+}
 @mixin wrapper {
   width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@mixin md-wrapper {
+  width: 1024px;
   margin-right: auto;
   margin-left: auto;
 }

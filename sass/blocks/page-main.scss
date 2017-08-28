@@ -2,7 +2,7 @@
   overflow-x: hidden;
   overflow-y: hidden;
   &__inner {
-    @include wrapper;
+    @include lg-wrapper;
 
     margin-top: 30px;
   }

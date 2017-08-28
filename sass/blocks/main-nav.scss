@@ -5,6 +5,9 @@
 
   justify-content: space-between;
   align-items: baseline;
+  @media (max-width: 1440px) {
+    min-width: 350px;
+  }
   &__list {
     @include reset-list;
 
@@ -16,12 +19,17 @@
     font-size: 24px;
 
     padding-right: 37px;
+    @media (max-width: 1440px) {
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
   &__link {
     text-decoration: none;
 
     color: #0064aa;
-    &:hover {
+    &:hover,
+    &:focus {
       cursor: pointer;
       text-decoration: underline;
 
