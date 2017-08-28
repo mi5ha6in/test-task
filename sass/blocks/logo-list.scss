@@ -1,0 +1,54 @@
+.logo-list {
+  @include reset-list;
+
+  display: flex;
+
+  width: 980px;
+  margin: 0 auto;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-self: flex-end;
+  &__link {
+    font-size: 0;
+
+    display: block;
+
+    background-image: url(../img/icon/icon-logo-link/icon-logo-link.png);
+    &:hover,
+    &focus {
+      opacity: .8;
+    }
+    &--ma {
+      width: 138px;
+      height: 16px;
+      margin-top: 3px;
+
+      background-position: -10px -10px;
+    }
+    &--microsoft {
+      width: 115px;
+      height: 25px;
+
+      background-position: -168px -10px;
+    }
+    &--vs {
+      width: 178px;
+      height: 25px;
+
+      background-position: -303px -10px;
+    }
+    &--v8 {
+      width: 127px;
+      height: 25px;
+
+      background-position: -501px -10px;
+    }
+    &--wp {
+      width: 174px;
+      height: 25px;
+
+      background-position: -648px -10px;
+    }
+  }
+}
