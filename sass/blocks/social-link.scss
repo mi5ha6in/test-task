@@ -6,9 +6,9 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: flex-end;
-      @media (max-width: 1440px) {
-        min-width: 100px;
-    }
+  @media (max-width: 1440px) {
+    min-width: 100px;
+  }
   &__item {
     background-image: url('../img/social_icon/social_icon.png');
     background-repeat: no-repeat;
@@ -22,33 +22,36 @@
       background-position: -10px -10px;
 
       align-self: flex-start;
-          @media (max-width: 1440px) {
-           background-size: cover;
-           background-position: -5px 6px;
-           height: 30px;
-    }
+      @media (max-width: 1440px) {
+        height: 30px;
+
+        background-position: -5px 6px;
+        background-size: cover;
+      }
     }
     &--twitter {
       width: 36px;
       height: 35px;
 
       background-position: -50px -6px;
-          @media (max-width: 1440px) {
-      background-size: cover;
-      background-position: -21px 6px;
-      height: 30px;
-    }
+      @media (max-width: 1440px) {
+        height: 30px;
+
+        background-position: -21px 6px;
+        background-size: cover;
+      }
     }
     &--vk {
       width: 37px;
       height: 30px;
 
       background-position: -108px -10px;
-          @media (max-width: 1440px) {
-      background-size: cover;
-      background-position: -40px 6px;
-      height: 25px;
-    }
+      @media (max-width: 1440px) {
+        height: 25px;
+
+        background-position: -40px 6px;
+        background-size: cover;
+      }
     }
   }
 }

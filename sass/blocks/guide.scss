@@ -1,19 +1,33 @@
 .guide {
-  padding-bottom: 425px;
   font-family: SegoeUILight, Helvetica, Roboto, Arial, sans-serif;
 
   position: relative;
+
+  padding-bottom: 425px;
+  &__inner {
+    @include lg-wrapper;
+    @media (max-width: 1440px) {
+      @include md-wrapper;
+    }
+  }
   &__title {
     @include reset-spacings;
     @include font-title;
 
     font-size: 122px;
     line-height: 165px;
+
     padding-bottom: 40px;
 
     color: #000;
     &--shift-left {
       margin-left: -6px;
+    }
+    @media (max-width: 1440px) {
+      font-size: 60px;
+      line-height: 80px;
+
+      padding-bottom: 20px;
     }
   }
   &__select-city {
@@ -23,17 +37,24 @@
     padding-top: 20px;
 
     color: #000;
+    @media (max-width: 1440px) {
+      font-size: 28px;
+      line-height: 32px;
+
+      padding-top: 10px;
+    }
     button {
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
       font: inherit;
-      outline:none;
+
+      cursor: pointer;
 
       color: #0064aa;
+      border: none;
+      outline: none;
+      background-color: transparent;
       &:hover,
       &:focus {
-        opacity: 0.7;
+        opacity: .7;
       }
     }
   }
@@ -46,43 +67,24 @@
     background-color: #fff;
   }
   &__content {
-    @include wrapper;
+    @include lg-wrapper;
 
     display: flex;
 
     margin-top: 57px;
 
     justify-content: space-between;
+    @media (max-width: 1440px) {
+      @include md-wrapper;
+
+      flex-direction: column;
+    }
   }
   &__list-city {
     width: 1041px;
-  }
-  &::before {
-    position: absolute;
-    top: 344px;
-    left: -927px;
-
-    display: table;
-
-    width: 948px;
-    height: 590px;
-
-    content: '';
-
-    background: url(../img/bg-left.png);
-  }
-  &::after {
-    position: absolute;
-    top: 428px;
-    right: -1037px;
-
-    display: table;
-
-    width: 1031px;
-    height: 518px;
-
-    content: '';
-
-    background: url(../img/bg-right.png);
+    @media (max-width: 1440px) {
+      width: 100%;
+      overflow: hidden;
+    }
   }
 }

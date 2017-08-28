@@ -13,16 +13,29 @@
 
   box-sizing: border-box;
   width: 1041px;
+  min-height: 337px;
   padding-top: 25px;
   padding-bottom: 30px;
 
   border: 1px solid #000;
 
   flex-wrap: wrap;
+  @media (max-width: 1440px) {
+    @include md-wrapper;
+
+    font-size: 18px;
+    line-height: 28px;
+
+    justify-content: space-between;
+  }
   &__item {
     box-sizing: border-box;
     width: 345px;
     padding-left: 50px;
+    @media (max-width: 1440px) {
+      width: 30%;
+      padding-left: 15px;
+    }
   }
   &__link {
     text-decoration: none;
@@ -37,7 +50,7 @@
   }
   &::before {
     position: absolute;
-    top: -33px;
+    top: -34px;
     left: 176px;
 
     display: table;

@@ -17,13 +17,22 @@
     margin: 0;
     margin-bottom: 24px;
     padding: 0;
+    @media (max-width: 1440px) {
+      width: 30%;
+    }
   }
 }
 .list-cards__item:nth-child(3n+2) .full-card {
   position: relative;
   left: -357px;
+  @media (max-width: 1440px) {
+    left: -116.6666666%;
+  }
 }
 .list-cards__item:nth-child(3n) .full-card {
   position: relative;
   left: -714px;
+  @media (max-width: 1440px) {
+    left: -233.333333333%;
+  }
 }

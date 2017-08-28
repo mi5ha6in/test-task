@@ -1,420 +1,425 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="UTF-8">
-  <title>Microsoft Developer Tour </title>
-  <link rel="stylesheet" href="css/style.css">
-  <!-- Pixel Glass -->
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      /* Desktop */
-      background-image: url("img/maket.png");
-    }
-  </style>
-  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-  <script src="../node_modules/pixel-glass/script.js"></script>
-  <!-- // Pixel Glass -->
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <title>Microsoft Developer Tour </title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        /* Desktop */
+        background-image: url("img/maket.png");
+      }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
+  </head>
 
-<body>
+  <body>
 
-  <header class="page-header">
-    <div class="page-header__inner">
-      <h1 class="page-header__title">Microsoft Developer Tour
-        <span class="page-header__subtitle">Технологическая экспедиция</span>
-      </h1>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Об экспедиции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Новости</a>
-          </li>
-        </ul>
-        <div class="social-link">
-          <a class="social-link__item social-link__item--facebook" title="facebook" href="#"></a>
-          <a class="social-link__item social-link__item--twitter" title="twitter" href="#"></a>
-          <a class="social-link__item social-link__item--vk" title="vk" href="#"></a>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <main class="page-main">
-    <div class="page-main__inner">
-      <section class="guide">
-        <h2 class="guide__title guide__title--shift-left">Путеводитель</h2>
-        <div class="guide__select-city">
-          Выберите <button>город</button>
-        </div>
-        <ul class="guide__menu-city menu-city menu-city--closed">
-          <li class="menu-city__item">
-            <a class="menu-city__link" href="#">Минск</a>
-          </li>
-          <li class="menu-city__item">
-            <a class="menu-city__link" href="#">Минск</a>
-          </li>
-          <li class="menu-city__item">
-            <a class="menu-city__link" href="#">Минск</a>
-          </li>
-          <li class="menu-city__item">
-            <a class="menu-city__link" href="#">Нижний Новгород</a>
-          </li>
-          <li class="menu-city__item">
-            <a class="menu-city__link" href="#">Нижний Новгород</a>
-          </li>
-          <li class="menu-city__item">
-            <a class="menu-city__link" href="#">Нижний Новгород</a>
-          </li>
-          <li class="menu-city__item">
-            <a class="menu-city__link" href="#">Новосибирск</a>
-          </li>
-          <li class="menu-city__item">
-            <a class="menu-city__link" href="#">Новосибирск</a>
-          </li>
-          <li class="menu-city__item">
-            <a class="menu-city__link" href="#">Новосибирск</a>
-          </li>
-          <li class="menu-city__item">
-            <a class="menu-city__link" href="#">Ростов-на-Дону</a>
-          </li>
-          <li class="menu-city__item">
-            <a class="menu-city__link" href="#">Ростов-на-Дону</a>
-          </li>
-          <li class="menu-city__item">
-            <a class="menu-city__link" href="#">Пермь</a>
-          </li>
-          <li class="menu-city__item">
-            <a class="menu-city__link" href="#">Пермь</a>
-          </li>
-          <li class="menu-city__item">
-            <a class="menu-city__link" href="#">Санкт-Петербург</a>
-          </li>
-          <li class="menu-city__item">
-            <a class="menu-city__link" href="#">Санкт-Петербург</a>
-          </li>
-          <li class="menu-city__item">
-            <a class="menu-city__link" href="#">Самара</a>
-          </li>
-          <li class="menu-city__item">
-            <a class="menu-city__link" href="#">Казань</a>
-          </li>
-          <li class="menu-city__item">
-            <a class="menu-city__link" href="#">Казань</a>
-          </li>
-          <li class="menu-city__item">
-            <a class="menu-city__link" href="#">Таганрог</a>
-          </li>
-          <li class="menu-city__item">
-            <a class="menu-city__link" href="#">Самара</a>
-          </li>
-          <li class="menu-city__item">
-            <a class="menu-city__link" href="#">Таганрог</a>
-          </li>
-          <li class="menu-city__item">
-            <a class="menu-city__link" href="#">Пермь</a>
-          </li>
-          <li class="menu-city__item">
-            <a class="menu-city__link" href="#">Ростов-на-Дону</a>
-          </li>
-        </ul> 
-        <div class="guide__content">
-
-          <ul class="guide__list-city list-cards">
-
-            <li class="list-cards__item">
-
-              <div class="mini-card">
-                <img class="mini-card__img" src="img/min-card/card-1.jpg" alt=""
-                     width="327" height="328">
-                <div class="mini-card__caption">
-                  <h3 class="mini-card__name">Mr. Cat</h3>
-                  <span class="mini-card__city">Астана</span>
-                </div>
-              </div>
-
-              <div class="full-card full-card--closed">
-                <img src="img/card-1.jpg" alt="" class="full-card__img">
-                <div class="full-card__info">
-                  <h3 class="full-card__name">
-                    Антикафе <br>
-                    Freedom for people
-                  </h3>
-                  <p class="full-card__descr">
-                    Антикафе Freedom for people - это свобода для умов,
-                    свобода для творчества и креатива
-                  </p> 
-                  <a class="full-card__link full-card__link--site"  href="#">
-                    https://www.facebook.com/fdfp.spb
-                  </a>
-                  <a class="full-card__link full-card__link--address"  href="#">
-                    Санкт-Петербург, Васильевский остров, Невский проспект,
-                    дом.88, корпус 20, офис 17
-                  </a>
-                  <a class="full-card__link full-card__link--person" >
-                    Иннокентий Михайлов
-                  </a>
-                </div>
-              </div>
-
+    <header class="page-header">
+      <div class="page-header__inner">
+        <h1 class="page-header__title">Microsoft Developer Tour
+          <span class="page-header__subtitle">Технологическая экспедиция</span>
+        </h1>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Об экспедиции</a>
             </li>
-            <li class="list-cards__item">
-
-              <div class="mini-card">
-                <img class="mini-card__img" src="img/min-card/card-1.jpg" alt=""
-                     width="327" height="328">
-                <div class="mini-card__caption">
-                  <h3 class="mini-card__name">Mr. Cat</h3>
-                  <span class="mini-card__city">Астана</span>
-                </div>
-              </div>
-
-              <div class="full-card full-card--closed">
-                <img src="img/card-1.jpg" alt="" class="full-card__img">
-                <div class="full-card__info">
-                  <h3 class="full-card__name">
-                    Антикафе <br>
-                    Freedom for people
-                  </h3>
-                  <p class="full-card__descr">
-                    Антикафе Freedom for people - это свобода для умов,
-                    свобода для творчества и креатива
-                  </p> 
-                  <a class="full-card__link full-card__link--site"  href="#">
-                    https://www.facebook.com/fdfp.spb
-                  </a>
-                  <a class="full-card__link full-card__link--address"  href="#">
-                    Санкт-Петербург, Васильевский остров, Невский проспект,
-                    дом.88, корпус 20, офис 17
-                  </a>
-                  <a class="full-card__link full-card__link--person" >
-                    Иннокентий Михайлов
-                  </a>
-                </div>
-              </div>
-
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Новости</a>
             </li>
-            <li class="list-cards__item">
-
-              <div class="mini-card">
-                <img class="mini-card__img" src="img/min-card/card-1.jpg" alt=""
-                     width="327" height="328">
-                <div class="mini-card__caption">
-                  <h3 class="mini-card__name">Mr. Cat</h3>
-                  <span class="mini-card__city">Астана</span>
-                </div>
-              </div>
-
-              <div class="full-card full-card--closed">
-                <img src="img/card-1.jpg" alt="" class="full-card__img">
-                <div class="full-card__info">
-                  <h3 class="full-card__name">
-                    Антикафе <br>
-                    Freedom for people
-                  </h3>
-                  <p class="full-card__descr">
-                    Антикафе Freedom for people - это свобода для умов,
-                    свобода для творчества и креатива
-                  </p> 
-                  <a class="full-card__link full-card__link--site"  href="#">
-                    https://www.facebook.com/fdfp.spb
-                  </a>
-                  <a class="full-card__link full-card__link--address"  href="#">
-                    Санкт-Петербург, Васильевский остров, Невский проспект,
-                    дом.88, корпус 20, офис 17
-                  </a>
-                  <a class="full-card__link full-card__link--person" >
-                    Иннокентий Михайлов
-                  </a>
-                </div>
-              </div>
-
-            </li>
-            <li class="list-cards__item">
-
-              <div class="mini-card">
-                <img class="mini-card__img" src="img/min-card/card-1.jpg" alt=""
-                     width="327" height="328">
-                <div class="mini-card__caption">
-                  <h3 class="mini-card__name">Mr. Cat</h3>
-                  <span class="mini-card__city">Астана</span>
-                </div>
-              </div>
-
-              <div class="full-card full-card--closed">
-                <img src="img/card-1.jpg" alt="" class="full-card__img">
-                <div class="full-card__info">
-                  <h3 class="full-card__name">
-                    Антикафе <br>
-                    Freedom for people
-                  </h3>
-                  <p class="full-card__descr">
-                    Антикафе Freedom for people - это свобода для умов,
-                    свобода для творчества и креатива
-                  </p> 
-                  <a class="full-card__link full-card__link--site"  href="#">
-                    https://www.facebook.com/fdfp.spb
-                  </a>
-                  <a class="full-card__link full-card__link--address"  href="#">
-                    Санкт-Петербург, Васильевский остров, Невский проспект,
-                    дом.88, корпус 20, офис 17
-                  </a>
-                  <a class="full-card__link full-card__link--person" >
-                    Иннокентий Михайлов
-                  </a>
-                </div>
-              </div>
-
-            </li>
-            <li class="list-cards__item">
-
-              <div class="mini-card">
-                <img class="mini-card__img" src="img/min-card/card-1.jpg" alt=""
-                     width="327" height="328">
-                <div class="mini-card__caption">
-                  <h3 class="mini-card__name">Mr. Cat</h3>
-                  <span class="mini-card__city">Астана</span>
-                </div>
-              </div>
-
-              <div class="full-card full-card--closed">
-                <img src="img/card-1.jpg" alt="" class="full-card__img">
-                <div class="full-card__info">
-                  <h3 class="full-card__name">
-                    Антикафе <br>
-                    Freedom for people
-                  </h3>
-                  <p class="full-card__descr">
-                    Антикафе Freedom for people - это свобода для умов,
-                    свобода для творчества и креатива
-                  </p> 
-                  <a class="full-card__link full-card__link--site"  href="#">
-                    https://www.facebook.com/fdfp.spb
-                  </a>
-                  <a class="full-card__link full-card__link--address"  href="#">
-                    Санкт-Петербург, Васильевский остров, Невский проспект,
-                    дом.88, корпус 20, офис 17
-                  </a>
-                  <a class="full-card__link full-card__link--person" >
-                    Иннокентий Михайлов
-                  </a>
-                </div>
-              </div>
-
-            </li>
-            <li class="list-cards__item">
-
-              <div class="mini-card">
-                <img class="mini-card__img" src="img/min-card/card-1.jpg" alt=""
-                     width="327" height="328">
-                <div class="mini-card__caption">
-                  <h3 class="mini-card__name">Mr. Cat</h3>
-                  <span class="mini-card__city">Астана</span>
-                </div>
-              </div>
-
-              <div class="full-card full-card--closed">
-                <img src="img/card-2.jpg" alt="" class="full-card__img">
-                <div class="full-card__info">
-                  <h3 class="full-card__name">
-                    Антикафе <br>
-                    Freedom for people
-                  </h3>
-                  <p class="full-card__descr">
-                    Антикафе Freedom for people - это свобода для умов,
-                    свобода для творчества и креатива
-                  </p> 
-                  <a class="full-card__link full-card__link--site"  href="#">
-                    https://www.facebook.com/fdfp.spb
-                  </a>
-                  <a class="full-card__link full-card__link--address"  href="#">
-                    Санкт-Петербург, Васильевский остров, Невский проспект,
-                    дом.88, корпус 20, офис 17
-                  </a>
-                  <a class="full-card__link full-card__link--person" >
-                    Иннокентий Михайлов
-                  </a>
-                </div>
-              </div>
-
-            </li>
-
           </ul>
-
-          <div class="guide__add-place add-place">
-            <span class="add-place__title">
-              Добавьте<br> свое место!
-            </span>
-            <button class="btn btn--add-place" type="button">
-              Добавить место
-            </button>
+          <div class="social-link">
+            <a class="social-link__item social-link__item--facebook" title="facebook" href="#"></a>
+            <a class="social-link__item social-link__item--twitter" title="twitter" href="#"></a>
+            <a class="social-link__item social-link__item--vk" title="vk" href="#"></a>
           </div>
-        </div>
-      </section>
-      <section class="check-in">
-        <h2 class="check-in__title">
-          Спешите зарегистрироваться <br>
-          на мероприятие в своем городе!
-        </h2>
-        <button class="btn check-in__button">Зарегистрируйся</button>
-      </section>
-    </div>
-  </main>
-  <footer class="page-footer">
-    <ul class="footer-links">
-      <li class="footer-links__item">
-        <a class="footer-links__link"  href="#" >
-          Контактная информация
-        </a>
-      </li>
-      <li class="footer-links__item">
-        <a class="footer-links__link"  href="#" >
-          Конфиденциальность
-        </a>
-      </li>
-      <li class="footer-links__item">
-        <a class="footer-links__link"  href="#" >
-          Условия использования
-        </a>
-      </li>
-      <li class="footer-links__item">
-        <a class="footer-links__link"  href="#" >
-          Товарные знаки
-        </a>
-      </li>
-    </ul>
-    <ul class="logo-list">
-      <li class="logo-list__item">
-        <a class="logo-list__link logo-list__link--v8" title="Windows 8" target="_blank" href="#">
-          Windows 8
-        </a>
-      </li>
-      <li class="logo-list__item">
-        <a class="logo-list__link logo-list__link--vs" title="VisualStudio 2013" target="_blank" href="#">
-          VisualStudio 2013
-        </a>
-      </li>
-      <li class="logo-list__item">
-      <a class="logo-list__link logo-list__link--ma" title="MicrosoftAzure" target="_blank" href="#">
-          MicrosoftAzure
-        </a>
-      </li>
-      <li class="logo-list__item">
-        <a  class="logo-list__link logo-list__link--wp" title="Windows Phone" target="_blank" href="#">
-          Windows Phone
-        </a>
-      </li>
-      <li class="logo-list__item">
-        <a class="logo-list__link logo-list__link--microsoft" title="Microsoft" target="_blank" href="#">
-          Microsoft
-        </a>
-      </li>
-    </ul>
-  </footer>
-  <script src = '../js/main.js'></script>
-</body>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <div class="page-main__inner">
+        <section class="guide">
+          <div class="guide__inner">
+            <h2 class="guide__title guide__title--shift-left">Путеводитель</h2>
+            <div class="guide__select-city">
+              Выберите <button>город</button>
+            </div>
+
+            <ul class="guide__menu-city menu-city menu-city--closed">
+              <li class="menu-city__item">
+                <a class="menu-city__link" href="#">Минск</a>
+              </li>
+              <li class="menu-city__item">
+                <a class="menu-city__link" href="#">Минск</a>
+              </li>
+              <li class="menu-city__item">
+                <a class="menu-city__link" href="#">Минск</a>
+              </li>
+              <li class="menu-city__item">
+                <a class="menu-city__link" href="#">Нижний Новгород</a>
+              </li>
+              <li class="menu-city__item">
+                <a class="menu-city__link" href="#">Нижний Новгород</a>
+              </li>
+              <li class="menu-city__item">
+                <a class="menu-city__link" href="#">Нижний Новгород</a>
+              </li>
+              <li class="menu-city__item">
+                <a class="menu-city__link" href="#">Новосибирск</a>
+              </li>
+              <li class="menu-city__item">
+                <a class="menu-city__link" href="#">Новосибирск</a>
+              </li>
+              <li class="menu-city__item">
+                <a class="menu-city__link" href="#">Новосибирск</a>
+              </li>
+              <li class="menu-city__item">
+                <a class="menu-city__link" href="#">Ростов-на-Дону</a>
+              </li>
+              <li class="menu-city__item">
+                <a class="menu-city__link" href="#">Ростов-на-Дону</a>
+              </li>
+              <li class="menu-city__item">
+                <a class="menu-city__link" href="#">Пермь</a>
+              </li>
+              <li class="menu-city__item">
+                <a class="menu-city__link" href="#">Пермь</a>
+              </li>
+              <li class="menu-city__item">
+                <a class="menu-city__link" href="#">Санкт-Петербург</a>
+              </li>
+              <li class="menu-city__item">
+                <a class="menu-city__link" href="#">Санкт-Петербург</a>
+              </li>
+              <li class="menu-city__item">
+                <a class="menu-city__link" href="#">Самара</a>
+              </li>
+              <li class="menu-city__item">
+                <a class="menu-city__link" href="#">Казань</a>
+              </li>
+              <li class="menu-city__item">
+                <a class="menu-city__link" href="#">Казань</a>
+              </li>
+              <li class="menu-city__item">
+                <a class="menu-city__link" href="#">Таганрог</a>
+              </li>
+              <li class="menu-city__item">
+                <a class="menu-city__link" href="#">Самара</a>
+              </li>
+              <li class="menu-city__item">
+                <a class="menu-city__link" href="#">Таганрог</a>
+              </li>
+              <li class="menu-city__item">
+                <a class="menu-city__link" href="#">Пермь</a>
+              </li>
+              <li class="menu-city__item">
+                <a class="menu-city__link" href="#">Ростов-на-Дону</a>
+              </li>
+            </ul> 
+          </div>
+          <div class="guide__content">
+
+            <ul class="guide__list-city list-cards">
+
+              <li class="list-cards__item">
+
+                <div class="mini-card">
+                  <img class="mini-card__img" src="img/min-card/card-1.jpg" alt=""
+                       width="327" height="328">
+                  <div class="mini-card__caption">
+                    <h3 class="mini-card__name">Mr. Cat</h3>
+                    <span class="mini-card__city">Астана</span>
+                  </div>
+                </div>
+
+                <div class="full-card full-card--closed">
+                  <img src="img/card-1.jpg" alt="" class="full-card__img">
+                  <div class="full-card__info">
+                    <h3 class="full-card__name">
+                      Антикафе <br>
+                      Freedom for people
+                    </h3>
+                    <p class="full-card__descr">
+                      Антикафе Freedom for people - это свобода для умов,
+                      свобода для творчества и креатива
+                    </p> 
+                    <a class="full-card__link full-card__link--site"  href="#">
+                      https://www.facebook.com/fdfp.spb
+                    </a>
+                    <a class="full-card__link full-card__link--address"  href="#">
+                      Санкт-Петербург, Васильевский остров, Невский проспект,
+                      дом.88, корпус 20, офис 17
+                    </a>
+                    <a class="full-card__link full-card__link--person" >
+                      Иннокентий Михайлов
+                    </a>
+                  </div>
+                </div>
+
+              </li>
+              <li class="list-cards__item">
+
+                <div class="mini-card">
+                  <img class="mini-card__img" src="img/min-card/card-1.jpg" alt=""
+                       width="327" height="328">
+                  <div class="mini-card__caption">
+                    <h3 class="mini-card__name">Mr. Cat</h3>
+                    <span class="mini-card__city">Астана</span>
+                  </div>
+                </div>
+
+                <div class="full-card full-card--closed">
+                  <img src="img/card-1.jpg" alt="" class="full-card__img">
+                  <div class="full-card__info">
+                    <h3 class="full-card__name">
+                      Антикафе <br>
+                      Freedom for people
+                    </h3>
+                    <p class="full-card__descr">
+                      Антикафе Freedom for people - это свобода для умов,
+                      свобода для творчества и креатива
+                    </p> 
+                    <a class="full-card__link full-card__link--site"  href="#">
+                      https://www.facebook.com/fdfp.spb
+                    </a>
+                    <a class="full-card__link full-card__link--address"  href="#">
+                      Санкт-Петербург, Васильевский остров, Невский проспект,
+                      дом.88, корпус 20, офис 17
+                    </a>
+                    <a class="full-card__link full-card__link--person" >
+                      Иннокентий Михайлов
+                    </a>
+                  </div>
+                </div>
+
+              </li>
+              <li class="list-cards__item">
+
+                <div class="mini-card">
+                  <img class="mini-card__img" src="img/min-card/card-1.jpg" alt=""
+                       width="327" height="328">
+                  <div class="mini-card__caption">
+                    <h3 class="mini-card__name">Mr. Cat</h3>
+                    <span class="mini-card__city">Астана</span>
+                  </div>
+                </div>
+
+                <div class="full-card full-card--closed">
+                  <img src="img/card-1.jpg" alt="" class="full-card__img">
+                  <div class="full-card__info">
+                    <h3 class="full-card__name">
+                      Антикафе <br>
+                      Freedom for people
+                    </h3>
+                    <p class="full-card__descr">
+                      Антикафе Freedom for people - это свобода для умов,
+                      свобода для творчества и креатива
+                    </p> 
+                    <a class="full-card__link full-card__link--site"  href="#">
+                      https://www.facebook.com/fdfp.spb
+                    </a>
+                    <a class="full-card__link full-card__link--address"  href="#">
+                      Санкт-Петербург, Васильевский остров, Невский проспект,
+                      дом.88, корпус 20, офис 17
+                    </a>
+                    <a class="full-card__link full-card__link--person" >
+                      Иннокентий Михайлов
+                    </a>
+                  </div>
+                </div>
+
+              </li>
+              <li class="list-cards__item">
+
+                <div class="mini-card">
+                  <img class="mini-card__img" src="img/min-card/card-1.jpg" alt=""
+                       width="327" height="328">
+                  <div class="mini-card__caption">
+                    <h3 class="mini-card__name">Mr. Cat</h3>
+                    <span class="mini-card__city">Астана</span>
+                  </div>
+                </div>
+
+                <div class="full-card full-card--closed">
+                  <img src="img/card-1.jpg" alt="" class="full-card__img">
+                  <div class="full-card__info">
+                    <h3 class="full-card__name">
+                      Антикафе <br>
+                      Freedom for people
+                    </h3>
+                    <p class="full-card__descr">
+                      Антикафе Freedom for people - это свобода для умов,
+                      свобода для творчества и креатива
+                    </p> 
+                    <a class="full-card__link full-card__link--site"  href="#">
+                      https://www.facebook.com/fdfp.spb
+                    </a>
+                    <a class="full-card__link full-card__link--address"  href="#">
+                      Санкт-Петербург, Васильевский остров, Невский проспект,
+                      дом.88, корпус 20, офис 17
+                    </a>
+                    <a class="full-card__link full-card__link--person" >
+                      Иннокентий Михайлов
+                    </a>
+                  </div>
+                </div>
+
+              </li>
+              <li class="list-cards__item">
+
+                <div class="mini-card">
+                  <img class="mini-card__img" src="img/min-card/card-1.jpg" alt=""
+                       width="327" height="328">
+                  <div class="mini-card__caption">
+                    <h3 class="mini-card__name">Mr. Cat</h3>
+                    <span class="mini-card__city">Астана</span>
+                  </div>
+                </div>
+
+                <div class="full-card full-card--closed">
+                  <img src="img/card-1.jpg" alt="" class="full-card__img">
+                  <div class="full-card__info">
+                    <h3 class="full-card__name">
+                      Антикафе <br>
+                      Freedom for people
+                    </h3>
+                    <p class="full-card__descr">
+                      Антикафе Freedom for people - это свобода для умов,
+                      свобода для творчества и креатива
+                    </p> 
+                    <a class="full-card__link full-card__link--site"  href="#">
+                      https://www.facebook.com/fdfp.spb
+                    </a>
+                    <a class="full-card__link full-card__link--address"  href="#">
+                      Санкт-Петербург, Васильевский остров, Невский проспект,
+                      дом.88, корпус 20, офис 17
+                    </a>
+                    <a class="full-card__link full-card__link--person" >
+                      Иннокентий Михайлов
+                    </a>
+                  </div>
+                </div>
+
+              </li>
+              <li class="list-cards__item">
+
+                <div class="mini-card">
+                  <img class="mini-card__img" src="img/min-card/card-1.jpg" alt=""
+                       width="327" height="328">
+                  <div class="mini-card__caption">
+                    <h3 class="mini-card__name">Mr. Cat</h3>
+                    <span class="mini-card__city">Астана</span>
+                  </div>
+                </div>
+
+                <div class="full-card full-card--closed">
+                  <img src="img/card-2.jpg" alt="" class="full-card__img">
+                  <div class="full-card__info">
+                    <h3 class="full-card__name">
+                      Антикафе <br>
+                      Freedom for people
+                    </h3>
+                    <p class="full-card__descr">
+                      Антикафе Freedom for people - это свобода для умов,
+                      свобода для творчества и креатива
+                    </p> 
+                    <a class="full-card__link full-card__link--site"  href="#">
+                      https://www.facebook.com/fdfp.spb
+                    </a>
+                    <a class="full-card__link full-card__link--address"  href="#">
+                      Санкт-Петербург, Васильевский остров, Невский проспект,
+                      дом.88, корпус 20, офис 17
+                    </a>
+                    <a class="full-card__link full-card__link--person" >
+                      Иннокентий Михайлов
+                    </a>
+                  </div>
+                </div>
+
+              </li>
+
+            </ul>
+
+            <div class="guide__add-place add-place">
+              <span class="add-place__title">
+                Добавьте<br> свое место!
+              </span>
+              <button class="btn btn--add-place" type="button">
+                Добавить место
+              </button>
+            </div>
+          </div>
+        </section>
+        <!-- <section class="check-in">
+          <div class="check-in__inner">
+            <h2 class="check-in__title">
+              Спешите зарегистрироваться <br>
+              на мероприятие в своем городе!
+            </h2>
+            <button class="btn check-in__button">Зарегистрируйся</button>
+          </div>
+        </section> -->
+      </div>
+    </main>
+    <!-- <footer class="page-footer">
+      <ul class="footer-links">
+        <li class="footer-links__item">
+          <a class="footer-links__link"  href="#" >
+            Контактная информация
+          </a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link"  href="#" >
+            Конфиденциальность
+          </a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link"  href="#" >
+            Условия использования
+          </a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link"  href="#" >
+            Товарные знаки
+          </a>
+        </li>
+      </ul>
+      <ul class="logo-list">
+        <li class="logo-list__item">
+          <a class="logo-list__link logo-list__link--v8" title="Windows 8" target="_blank" href="#">
+            Windows 8
+          </a>
+        </li>
+        <li class="logo-list__item">
+          <a class="logo-list__link logo-list__link--vs" title="VisualStudio 2013" target="_blank" href="#">
+            VisualStudio 2013
+          </a>
+        </li>
+        <li class="logo-list__item">
+          <a class="logo-list__link logo-list__link--ma" title="MicrosoftAzure" target="_blank" href="#">
+            MicrosoftAzure
+          </a>
+        </li>
+        <li class="logo-list__item">
+          <a  class="logo-list__link logo-list__link--wp" title="Windows Phone" target="_blank" href="#">
+            Windows Phone
+          </a>
+        </li>
+        <li class="logo-list__item">
+          <a class="logo-list__link logo-list__link--microsoft" title="Microsoft" target="_blank" href="#">
+            Microsoft
+          </a>
+        </li>
+      </ul>
+    </footer> -->
+    <script src = '../js/main.js'></script>
+  </body>
 </html>

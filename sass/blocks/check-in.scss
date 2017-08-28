@@ -1,8 +1,15 @@
 .check-in {
-  @include wrapper;
+  background-image: url(../img/bg_bottom.png);
+  background-repeat: no-repeat;
+  background-position: center 20px;
+  &__inner {
+      @include wrapper;
+
+  padding-bottom: 143px;
 
   text-align: center;
-  padding-bottom: 143px;
+  }
+
   &__button {
     width: 288px;
   }
@@ -17,33 +24,5 @@
     width: 634px;
     margin: 0 auto;
     margin-bottom: 31px;
-    &::before {
-      position: absolute;
-      top: 25px;
-      left: -981px;
-
-      display: table;
-
-      width: 965px;
-      height: 189px;
-
-      content: ' ';
-
-      background: url(../img/bg-left_2.png);
-    }
-    &::after {
-      position: absolute;
-      top: 22px;
-      right: -972px;
-
-      display: table;
-
-      width: 973px;
-      height: 173px;
-
-      content: ' ';
-
-      background: url(../img/bg-right_2.png);
-    }
   }
 }
