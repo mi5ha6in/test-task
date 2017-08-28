@@ -1,6 +1,8 @@
 .mini-card {
   position: relative;
 
+  cursor: pointer;
+
   background: #000;
   &:hover > .mini-card__img {
     opacity: 1;

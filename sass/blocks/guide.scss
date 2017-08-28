@@ -1,5 +1,7 @@
 .guide {
   font-family: SegoeUILight, Helvetica, Roboto, Arial, sans-serif;
+
+  position: relative;
   &__title {
     @include reset-spacings;
 
@@ -27,6 +29,14 @@
       color: #0064aa;
     }
   }
+  &  &__menu-city {
+    position: absolute;
+    z-index: 1;
+
+    margin-top: 57px;
+
+    background-color: #fff;
+  }
   &__content {
     @include wrapper;
 
@@ -38,5 +48,33 @@
   }
   &__list-city {
     width: 1041px;
+  }
+  &::before {
+    position: absolute;
+    top: 344px;
+    left: -927px;
+
+    display: table;
+
+    width: 948px;
+    height: 590px;
+
+    content: '';
+
+    background: url(../img/bg-left.png);
+  }
+  &::after {
+    position: absolute;
+    top: 428px;
+    right: -1037px;
+
+    display: table;
+
+    width: 1031px;
+    height: 518px;
+
+    content: '';
+
+    background: url(../img/bg-right.png);
   }
 }
