@@ -24,11 +24,8 @@
   }
   &__name {
     @include reset-spacings;
-
-    font-family: SegoeUILight, Helvetica, Roboto, Arial, sans-serif;
+    @include font-title;
     font-size: 54px;
-    font-weight: normal;
-    font-style: normal;
     line-height: 56px;
 
     margin-bottom: 33px;

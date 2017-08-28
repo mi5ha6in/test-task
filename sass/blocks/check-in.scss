@@ -1,0 +1,49 @@
+.check-in {
+  @include wrapper;
+
+  text-align: center;
+  // position: relative;
+  &__button {
+    width: 288px;
+  }
+  &__title {
+    @include font-title;
+
+    font-size: 36px;
+    line-height: 40px;
+
+    position: relative;
+
+    width: 634px;
+    margin: 0 auto;
+    margin-bottom: 31px;
+    &::before {
+      position: absolute;
+      top: 25px;
+      left: -981px;
+
+      display: table;
+
+      width: 965px;
+      height: 189px;
+
+      content: ' ';
+
+      background: url(../img/bg-left_2.png);
+    }
+    &::after {
+      position: absolute;
+      top: 22px;
+      right: -972px;
+
+      display: table;
+
+      width: 973px;
+      height: 173px;
+
+      content: ' ';
+
+      background: url(../img/bg-right_2.png);
+    }
+  }
+}

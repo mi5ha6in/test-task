@@ -1,4 +1,6 @@
 .page-main {
+  overflow-x: hidden;
+  overflow-y: hidden;
   &__inner {
     @include wrapper;
 

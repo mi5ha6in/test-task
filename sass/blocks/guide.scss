@@ -1,14 +1,14 @@
 .guide {
+  padding-bottom: 425px;
   font-family: SegoeUILight, Helvetica, Roboto, Arial, sans-serif;
 
   position: relative;
   &__title {
     @include reset-spacings;
+    @include font-title;
 
     font-size: 122px;
-    font-weight: normal;
     line-height: 165px;
-
     padding-bottom: 40px;
 
     color: #000;
@@ -23,10 +23,18 @@
     padding-top: 20px;
 
     color: #000;
-    span {
+    button {
+      background-color: transparent;
+      border: none;
       cursor: pointer;
+      font: inherit;
+      outline:none;
 
       color: #0064aa;
+      &:hover,
+      &:focus {
+        opacity: 0.7;
+      }
     }
   }
   &  &__menu-city {
