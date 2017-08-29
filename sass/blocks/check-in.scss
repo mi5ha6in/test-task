@@ -2,14 +2,19 @@
   background-image: url(../img/bg_bottom.png);
   background-repeat: no-repeat;
   background-position: center 20px;
-  &__inner {
-      @include wrapper;
-
-  padding-bottom: 143px;
-
-  text-align: center;
+    @media (max-width: 1440px) {
+    background: none;
   }
+  &__inner {
+    @include wrapper;
 
+    padding-bottom: 143px;
+
+    text-align: center;
+    @media (max-width: 1440px) {
+      @include md-wrapper;
+    }
+  }
   &__button {
     width: 288px;
   }
