@@ -12,9 +12,17 @@
   @media (max-width: 1440px) {
     width: 100%;
   }
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    width: 85%;
+  }
   &__item {
     @media (max-width: 1440px) {
       padding: 15px 5px;
+    }
+    @media (max-width: 768px) {
+      padding: 10px;
     }
   }
   &__link {

@@ -12,6 +12,9 @@
 
   flex-wrap: wrap;
   justify-content: space-between;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
   &__item {
     width: 327px;
     margin: 0;
@@ -20,19 +23,26 @@
     @media (max-width: 1440px) {
       width: 30%;
     }
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 }
 .list-cards__item:nth-child(3n+2) .full-card {
   position: relative;
   left: -357px;
   @media (max-width: 1440px) {
-    left: -116.6666666%;
+    left: -116.666666%;
+  }  @media (max-width: 768px) {
+    position: static;
   }
 }
 .list-cards__item:nth-child(3n) .full-card {
   position: relative;
   left: -714px;
   @media (max-width: 1440px) {
-    left: -233.333333333%;
+    left: -233.3333333%;
+  }  @media (max-width: 768px) {
+    position: static;
   }
 }

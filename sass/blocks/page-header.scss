@@ -12,6 +12,11 @@
     @media (max-width: 1440px) {
       @include md-wrapper;
     }
+    @media (max-width: 768px) {
+      flex-direction: column;
+
+      align-items: center;
+    }
   }
   &__title {
     @include reset-spacings;
@@ -24,6 +29,12 @@
     @media (max-width: 1440px) {
       font-size: 32px;
       line-height: 38px;
+
+      padding-right: 10px;
+    }
+    @media (max-width: 768px) {
+      font-size: 28px;
+      line-height: 32px;
     }
   }
   &__subtitle {
@@ -36,6 +47,11 @@
     @media (max-width: 1440px) {
       font-size: 12px;
       line-height: 14px;
+    }
+  }
+  &__nav {
+    @media (max-width: 768px) {
+      margin-top: 30px;
     }
   }
 }

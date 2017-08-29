@@ -29,6 +29,12 @@
 
       padding-bottom: 20px;
     }
+    @media (max-width: 768px) {
+      font-size: 42px;
+      line-height: 50px;
+
+      padding-bottom: 10px;
+    }
   }
   &__select-city {
     font-size: 36px;
@@ -83,8 +89,9 @@
   &__list-city {
     width: 1041px;
     @media (max-width: 1440px) {
-      width: 100%;
       overflow: hidden;
+
+      width: 100%;
     }
   }
 }
