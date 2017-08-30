@@ -1,6 +1,8 @@
 # test-task
 Тестовое задание для BeaversBrothers
 
-npm i - установить зависимости<br>
-gulp - запустить сервер и слежение за файлами<br>
-gulp build - собрать проект в папку build<br>
+* npm i - установить зависимости
+* gulp - запустить сервер и слежение за файлами
+* gulp build - собрать проект в папку build
+
+Посмотреть собраный сайт можно по [ссылке](http://mi5ha6in.pythonanywhere.com/beaversbrothers/)
