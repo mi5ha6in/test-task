@@ -5,4 +5,4 @@
 * gulp - запустить сервер и слежение за файлами
 * gulp build - собрать проект в папку build
 
-Посмотреть собранный сайт можно по [ссылке](http://mi5ha6in.pythonanywhere.com/beaversbrothers/)
+Посмотреть собранный сайт можно по [ссылке](https://mi5ha6in.github.io/test-task/index.html)
